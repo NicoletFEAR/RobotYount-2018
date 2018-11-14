@@ -8,6 +8,10 @@ public class RobotMap {
 	public static VictorSP backLeft;
 	public static VictorSP backRight;
 	
+	public static final int airCompressorPort = 0;
+	public static final int pressureSwitchPort = 0;
+	public static final int magnetPort = 0;
+	
 	public static void init() {
 		frontLeft = new VictorSP(0);
 		frontRight = new VictorSP(1);

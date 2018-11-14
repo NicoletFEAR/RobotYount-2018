@@ -7,11 +7,10 @@
 
 package org.usfirst.frc.team4786.robot;
 
+import org.usfirst.frc.team4786.subsystems.AirCompressor;
 import org.usfirst.frc.team4786.subsystems.DriveTrain;
 
 import edu.wpi.first.wpilibj.TimedRobot;
-import edu.wpi.first.wpilibj.smartdashboard.SendableChooser;
-import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
 
 /**
  * The VM is configured to automatically run this class, and to call the
@@ -23,6 +22,7 @@ import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
 public class Robot extends TimedRobot {
 	public static OI oi;
 	public static DriveTrain driveTrain;
+	//public static AirCompressor compressor;
 	
 	/**
 	 * This function is run when the robot is first started up and should be
@@ -34,6 +34,7 @@ public class Robot extends TimedRobot {
 		
 		oi = new OI();
 		driveTrain = new DriveTrain();
+		//compressor = new AirCompressor();
 	}
 
 	/**

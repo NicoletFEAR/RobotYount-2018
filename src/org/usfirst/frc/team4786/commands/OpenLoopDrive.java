@@ -29,7 +29,6 @@ public class OpenLoopDrive extends Command {
     	double robotOutput = reverseValue - forwardValue;
     	
     	Robot.driveTrain.arcadeDrive(robotOutput, turnAmount * 0.5);
-    	
     }
 
     // Make this return true when this Command no longer needs to run execute()

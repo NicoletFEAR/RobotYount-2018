@@ -22,7 +22,7 @@ public class DriveTrain extends Subsystem {
     public void arcadeDrive(double driveSpeed, double turnAmount) {
     	double leftSpeed = driveSpeed;
     	double rightSpeed = driveSpeed;
-    	
+   
     	RobotMap.frontLeft.set((-leftSpeed) - turnAmount);
 		RobotMap.backLeft.set((-leftSpeed) - turnAmount);
 		RobotMap.frontRight.set((rightSpeed) - turnAmount);
