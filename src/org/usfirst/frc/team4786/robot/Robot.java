@@ -11,6 +11,7 @@ import org.usfirst.frc.team4786.subsystems.AirCompressor;
 import org.usfirst.frc.team4786.subsystems.DriveTrain;
 
 import edu.wpi.first.wpilibj.TimedRobot;
+import edu.wpi.first.wpilibj.command.Scheduler;
 
 /**
  * The VM is configured to automatically run this class, and to call the
@@ -65,6 +66,7 @@ public class Robot extends TimedRobot {
 	 */
 	@Override
 	public void teleopPeriodic() {
+		Scheduler.getInstance().run();
 	}
 
 	/**

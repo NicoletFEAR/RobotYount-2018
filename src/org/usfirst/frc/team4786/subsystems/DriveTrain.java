@@ -6,6 +6,7 @@ import org.usfirst.frc.team4786.robot.RobotMap;
 import com.ctre.phoenix.motorcontrol.ControlMode;
 
 import edu.wpi.first.wpilibj.command.Subsystem;
+import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
 
 /**
  *
@@ -22,7 +23,7 @@ public class DriveTrain extends Subsystem {
     public void arcadeDrive(double driveSpeed, double turnAmount) {
     	double leftSpeed = driveSpeed;
     	double rightSpeed = driveSpeed;
-   
+ 
     	RobotMap.frontLeft.set((-leftSpeed) - turnAmount);
 		RobotMap.backLeft.set((-leftSpeed) - turnAmount);
 		RobotMap.frontRight.set((rightSpeed) - turnAmount);
