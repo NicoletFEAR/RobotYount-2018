@@ -9,6 +9,8 @@ package org.usfirst.frc.team4786.robot;
 
 import org.usfirst.frc.team4786.subsystems.AirCompressor;
 import org.usfirst.frc.team4786.subsystems.DriveTrain;
+import org.usfirst.frc.team4786.subsystems.PneumaticSlider;
+import org.usfirst.frc.team4786.subsystems.PullMagnet;
 
 import edu.wpi.first.wpilibj.TimedRobot;
 import edu.wpi.first.wpilibj.command.Scheduler;
@@ -23,7 +25,9 @@ import edu.wpi.first.wpilibj.command.Scheduler;
 public class Robot extends TimedRobot {
 	public static OI oi;
 	public static DriveTrain driveTrain;
-	//public static AirCompressor compressor;
+	public static PullMagnet pullMagnet;
+	public static AirCompressor compressor;
+	public static PneumaticSlider slidey;
 	
 	/**
 	 * This function is run when the robot is first started up and should be
@@ -32,10 +36,12 @@ public class Robot extends TimedRobot {
 	@Override
 	public void robotInit() {
 		RobotMap.init();
+		driveTrain = new DriveTrain();
+		pullMagnet = new PullMagnet();
+		compressor = new AirCompressor();
+		slidey = new PneumaticSlider();
 		
 		oi = new OI();
-		driveTrain = new DriveTrain();
-		//compressor = new AirCompressor();
 	}
 
 	/**

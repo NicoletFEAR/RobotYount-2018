@@ -11,7 +11,10 @@ public class RobotMap {
 	
 	public static final int airCompressorPort = 0;
 	public static final int pressureSwitchPort = 0;
-	public static final int magnetPort = 0;
+	public static final int primaryPneumaticModule = 0;
+	public static final int sliderSolenoidChannel = 0;
+	
+	public static final int magnetPort = 3;
 	
 	public static void init() {
 		frontLeft = new Spark(0);
