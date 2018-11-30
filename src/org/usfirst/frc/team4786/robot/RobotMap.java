@@ -9,17 +9,24 @@ public class RobotMap {
 	public static SpeedController backLeft;
 	public static SpeedController backRight;
 	
+	public static final int frontLeftPort = 0;
+	public static final int frontRightPort = 2;
+	public static final int backLeftPort = 1;
+	public static final int backRightPort = 3;
+	
 	public static final int airCompressorPort = 0;
 	public static final int pressureSwitchPort = 0;
 	public static final int primaryPneumaticModule = 0;
-	public static final int sliderSolenoidChannel = 0;
+	
+	public static final int forwardSliderChannel = 0;
+	public static final int reverseSliderChannel = 1;
 	
 	public static final int magnetPort = 3;
 	
 	public static void init() {
-		frontLeft = new Spark(0);
-		frontRight = new Spark(2);
-		backLeft = new Spark(1);
-		backRight = new Spark(3);
+		frontLeft = new Spark(frontLeftPort);
+		frontRight = new Spark(frontRightPort);
+		backLeft = new Spark(backLeftPort);
+		backRight = new Spark(backRightPort);
 	}
 }

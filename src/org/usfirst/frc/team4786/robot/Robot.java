@@ -36,12 +36,17 @@ public class Robot extends TimedRobot {
 	@Override
 	public void robotInit() {
 		RobotMap.init();
+
 		driveTrain = new DriveTrain();
 		pullMagnet = new PullMagnet();
 		compressor = new AirCompressor();
 		slidey = new PneumaticSlider();
 		
 		oi = new OI();
+	}
+	
+	@Override
+	public void robotPeriodic() {
 	}
 
 	/**
